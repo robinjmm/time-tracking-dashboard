@@ -1,0 +1,25 @@
+{
+  "name": "time-tracking-dashboard",
+  "version": "1.0.0",
+  "description": "My solution for the Time Tracking Dashboard challenge from Frontendmentor.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinjmm/time-tracking-dashboard.git"
+  },
+  "author": "robinjmm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robinjmm/time-tracking-dashboard/issues"
+  },
+  "homepage": "https://github.com/robinjmm/time-tracking-dashboard#readme",
+  "devDependencies": {
+    "parcel": "^2.8.0"
+  },
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}
