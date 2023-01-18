@@ -12,9 +12,7 @@ export default defineConfig({
 	css: {
 		postcss: {
 			plugins: [
-				postPresetEnv({
-					stage: 2
-				}),
+				postPresetEnv,
 				purgeCSSPlugin({
 					content: ["./index.html"],
 					variables: true,

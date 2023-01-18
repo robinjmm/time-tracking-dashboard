@@ -1,0 +1,12 @@
+@use "../base/variables" as *;
+
+.button {
+	background-color: transparent;
+	border: none;
+	color: var(--text-primary);
+
+	&:is(:active, :focus-visible) {
+		outline: none;
+		color: var(--text-accent-white);
+	}
+}

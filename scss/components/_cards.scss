@@ -1,0 +1,136 @@
+@use "../base/variables" as *;
+
+.card {
+	inline-size: min(90%, toRem(327));
+	margin-inline: auto;
+	overflow: hidden;
+	font-family: var(--ff-primary);
+	color: var(--text-primary);
+	border-radius: 14px;
+}
+
+.profile-card {
+	background-color: var(--bg-card);
+	margin-block-end: toRem(30);
+
+	&__header {
+		background-color: var(--bg-profile-header);
+		display: flex;
+		align-items: center;
+		gap: toRem(20);
+		padding-block: toRem(30);
+		padding-left: toRem(30);
+		border-radius: 14px;
+	}
+
+	&__image {
+		inline-size: toRem(70);
+		block-size: toRem(70);
+		border-radius: 50%;
+		border: 3px solid white;
+	}
+
+	&__name {
+		font-size: toRem(22);
+		color: var(--text-accent-white);
+		font-weight: var(--fw-light);
+	}
+
+	&__body {
+		padding-block: toRem(22);
+		padding-inline: toRem(30);
+	}
+
+	&__list {
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item:is(:active, :focus-visible) {
+		color: var(--text-accent-white);
+	}
+}
+
+.activity-card {
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+
+	&__bg {
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		z-index: 2;
+		padding-right: toRem(16);
+
+		&--orange {
+			background-color: hsl(15, 100%, 70%);
+		}
+
+		&--blue {
+			background-color: hsl(195, 74%, 62%);
+		}
+
+		&--red {
+			background-color: hsl(348, 100%, 68%);
+		}
+
+		&--green {
+			background-color: hsl(145, 58%, 55%);
+		}
+
+		&--violet {
+			background-color: hsl(264, 64%, 52%);
+		}
+
+		&--yellow {
+			background-color: hsl(43, 84%, 65%);
+		}
+	}
+
+	&__icon {
+		transform: translateY(-10px);
+		width: 78px;
+		height: 78px;
+	}
+
+	&__body {
+		background-color: var(--bg-card);
+		position: relative;
+		z-index: 3;
+//		transform: translateY(-40px);
+		top: -40px;
+		border-radius: 14px;
+		padding-inline: toRem(30);
+		padding-block: toRem(26);
+	}
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__title {
+		font-size: toRem(18);
+		color: var(--text-accent-white);
+		font-weight: var(--fw-medium);
+	}
+
+	&__stats {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__hours {
+		font-size: toRem(32);
+		font-weight: var(--fw-light);
+		color: var(--text-accent-white);
+	}
+
+	&__previous {
+		font-size: toRem(14);
+	}
+}

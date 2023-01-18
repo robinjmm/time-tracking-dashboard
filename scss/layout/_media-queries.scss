@@ -1,0 +1,15 @@
+@use "../base/variables" as *;
+
+@media (hover: hover) {
+	.button {
+		cursor: pointer;
+
+		&:hover {
+			color: var(--text-accent-white);
+		}
+	}
+
+	.activity-card__ellipsis:hover {
+		cursor: pointer;	
+	}
+}
