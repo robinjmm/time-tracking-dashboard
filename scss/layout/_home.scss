@@ -1,6 +1,14 @@
 @use "../base/variables" as *;
 
 body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	background-color: var(--bg-body);
 	padding-block: toRem(80);
+}
+
+footer {
+	margin-top: toRem(60);
+	text-align: center;
 }

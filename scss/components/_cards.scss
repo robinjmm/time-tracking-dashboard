@@ -1,7 +1,7 @@
 @use "../base/variables" as *;
 
 .card {
-	inline-size: min(90%, toRem(327));
+	width: min(90%, toRem(330));
 	margin-inline: auto;
 	font-family: var(--ff-primary);
 	color: var(--text-primary);
