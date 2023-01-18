@@ -7,6 +7,12 @@ const getData = async () => {
     return await response.json();
 };
 
+const setPreviousTimeframe = frequency => {
+	if (frequency.toLowerCase() === "daily") return "Yesterday";
+	if (frequency.toLowerCase() === "weekly") return "Last Week";
+	if (frequency.toLowerCase() === "monthly") return "Last Month";
+}
+
 const updateHours = async (frequency) => {
 	const data = await getData();
 
@@ -17,7 +23,7 @@ const updateHours = async (frequency) => {
 		let timeFrame = activity.timeframes[frequency.toLowerCase()];
 
 		activityHour.textContent = `${timeFrame.current}hrs`;
-		activityPreviousHour.textContent = `Last Week - ${timeFrame.previous}hrs`;
+		activityPreviousHour.textContent = `${setPreviousTimeframe(frequency)} - ${timeFrame.previous}hrs`;
 	}
 };
 
