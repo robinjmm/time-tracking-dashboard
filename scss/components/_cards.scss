@@ -3,15 +3,15 @@
 .card {
 	inline-size: min(90%, toRem(327));
 	margin-inline: auto;
-	overflow: hidden;
 	font-family: var(--ff-primary);
 	color: var(--text-primary);
 	border-radius: 14px;
+	margin-block-end: toRem(30);
+	overflow: hidden;
 }
 
 .profile-card {
 	background-color: var(--bg-card);
-	margin-block-end: toRem(30);
 
 	&__header {
 		background-color: var(--bg-profile-header);
@@ -53,7 +53,6 @@
 }
 
 .activity-card {
-	overflow: hidden;
 	position: relative;
 	z-index: 1;
 
@@ -99,11 +98,11 @@
 		background-color: var(--bg-card);
 		position: relative;
 		z-index: 3;
-//		transform: translateY(-40px);
-		top: -40px;
+		margin-top: -40px;
 		border-radius: 14px;
 		padding-inline: toRem(30);
 		padding-block: toRem(26);
+		transition: background-color .2s linear;
 	}
 
 	&__header {

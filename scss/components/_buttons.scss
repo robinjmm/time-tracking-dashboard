@@ -4,6 +4,7 @@
 	background-color: transparent;
 	border: none;
 	color: var(--text-primary);
+	transition: color .2s linear;
 
 	&:is(:active, :focus-visible) {
 		outline: none;
