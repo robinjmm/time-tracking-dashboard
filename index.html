@@ -1,80 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="My solution for the Time Tracking Dashboard challenge from Frontendmentor.io">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+	<title>Time Tracking Dashboard</title>
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
+	<main>
+		<article class="profile-card">
+			<div class="profile-card__header">
+				<img src="/images/image-jeremy.png" alt="Jeremy smiling at the camera">
 
-  Daily
-  Weekly
-  Monthly
+				<div class="profile-card__info">
+					<p>Report for</p>
+					<p>Jeremy Robson</p>
+				</div>
+			</div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+			<div class="profile-card__body">
+				<ul>
+					<li>Daily</li>
+					<li>Weekly</li>
+					<li>Monthly</li>
+				</ul>
+			</div>
+		</article>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+		<article class="activity-card">
+			<div>
+				<img src="/images/icon-work.svg" alt="">
+			</div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+			<div>
+				<p>Work</p>
+				<img src="/images/icon-ellipsis.svg" alt="">
+			</div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+			<div>
+				<p>32hrs</p>
+				<p>Last Week - 36hrs</p>
+			</div>
+		</article>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+		<article class="activity-card">
+			<div>
+				<img src="/images/icon-play.svg" alt="">
+			</div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+			<div>
+				<p>Play</p>
+				<img src="/images/icon-ellipsis.svg" alt="">
+			</div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+			<div>
+				<p>10hrs</p>
+				<p>Last Week - 8hrs</p>
+			</div>
+		</article>
+
+		<article class="activity-card">
+			<div>
+				<img src="/images/icon-study.svg" alt="">
+			</div>
+
+			<div>
+				<p>Study</p>
+				<img src="/images/icon-ellipsis.svg" alt="">
+			</div>
+
+			<div>
+				<p>4hrs</p>
+				<p>Last Week - 7hrs</p>
+			</div>
+		</article>
+
+		<article class="activity-card">
+			<div>
+				<img src="/images/icon-exercise.svg" alt="">
+			</div>
+
+			<div>
+				<p>Exercise</p>
+				<img src="/images/icon-ellipsis.svg" alt="">
+			</div>
+
+			<div>
+				<p>4hrs</p>
+				<p>Last Week - 5hrs</p>
+			</div>
+		</article>
+
+		<article class="activity-card">
+			<div>
+				<img src="/images/icon-exercise.svg" alt="">
+			</div>
+
+			<div>
+				<p>Exercise</p>
+				<img src="/images/icon-ellipsis.svg" alt="">
+			</div>
+
+			<div>
+				<p>4hrs</p>
+				<p>Last Week - 5hrs</p>
+			</div>
+		</article>
+
+		<article class="activity-card">
+			<div>
+				<img src="/images/icon-social.svg" alt="">
+			</div>
+
+			<div>
+				<p>Social</p>
+				<img src="/images/icon-ellipsis.svg" alt="">
+			</div>
+
+			<div>
+				<p>5hrs</p>
+				<p>Last Week - 10hrs</p>
+			</div>
+		</article>
+
+		<article class="activity-card">
+			<div>
+				<img src="/images/icon-self-care.svg" alt="">
+			</div>
+
+			<div>
+				<p>Self Care</p>
+				<img src="/images/icon-ellipsis.svg" alt="">
+			</div>
+
+			<div>
+				<p>2hrs</p>
+				<p>Last Week - 2hrs</p>
+			</div>
+		</article>
+	</main>
+	
 </body>
 </html>
