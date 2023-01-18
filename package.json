@@ -1,25 +1,36 @@
 {
-  "name": "time-tracking-dashboard",
-  "version": "1.0.0",
-  "description": "My solution for the Time Tracking Dashboard challenge from Frontendmentor.io",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/robinjmm/time-tracking-dashboard.git"
-  },
-  "author": "robinjmm",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/robinjmm/time-tracking-dashboard/issues"
-  },
-  "homepage": "https://github.com/robinjmm/time-tracking-dashboard#readme",
-  "devDependencies": {
-    "parcel": "^2.8.0"
-  },
-  "dependencies": {
-    "sass": "^1.56.1"
-  }
+	"name": "time-tracking-dashboard",
+	"version": "1.0.0",
+	"description": "My solution for the Time Tracking Dashboard challenge from Frontendmentor.io",
+	"type": "module",
+	"browserslist": [
+		"defaults and supports es6-module",
+		"maintained node versions"
+	],
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/robinjmm/time-tracking-dashboard.git"
+	},
+	"author": "robinjmm",
+	"license": "UNLICENSED",
+	"bugs": {
+		"url": "https://github.com/robinjmm/time-tracking-dashboard/issues"
+	},
+	"homepage": "https://github.com/robinjmm/time-tracking-dashboard#readme",
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^6.2.1",
+		"postcss-preset-env": "^7.8.3",
+		"sass": "^1.57.1"
+	},
+	"devDependencies": {
+		"@fullhuman/postcss-purgecss": "^5.0.0",
+		"postcss": "^8.4.21",
+		"vite": "^4.0.4",
+		"vite-plugin-html": "^3.2.0"
+	}
 }
